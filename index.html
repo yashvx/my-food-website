@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Food Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="logo.png" alt="Logo" class="logo" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        
+      </nav>
+      
+
+     
+      
+      </div>
+      <div class="header-container">
+        <img src="bgnew2.png" />
+        <div id="des">
+          <h2>Love and Lemons</h2>
+          <h3>
+            So now is the time to leave all your stress of thinking about "what
+            to
+          </h3>
+          <h3>make today" on Love and Lemons....</h3>
+          <h3>
+            here you will enjoy your cooking by getting random dishes to make
+            and
+          </h3>
+          <h3>exciting recipes which are tasty and healthy!!!</h3>
+        </div>
+      </div>
+      <input
+          class="inputbox"
+          type="text"
+          placeholder="enter a meal category"
+        />
+        <button class="searchbutton" onclick="searchByCategory()">
+          Search
+        </button>
+    </header>
+    <section id="randomMeal">
+      <h1>Random Meal</h1>
+      <h3>So here is your random meal for today!!</h3>
+      <div id="randomMealContent"></div>
+    </section>
+
+    <div id="mealModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-instructions"></p>
+      </div>
+    </div>
+  
+
+    <section class="searched-meals">
+      <h2>Searched Meals</h2>
+      <p id="searchedMealText">here are the searched meal category images</p>
+      <div class="meal-container" id="searchedMealContainer">
+       
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  </body>
+
+  
+</html>

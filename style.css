@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: beige;
+  height: 100vh;
+  width: 100vw;
+
+  /* overflow-x: hidden; */
+}
+
+.header-container {
+  position: relative;
+  width: 100vw;
+
+  text-align: center;
+}
+
+nav {
+  width: 100vw;
+}
+header img {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  padding: 0;
+}
+
+#des {
+  position: absolute;
+  transform: rotate(6deg);
+  top: 40%;
+  left: 25%;
+  /* transform: translate(-50%, -50%); */
+  font-family: "Dancing Script", cursive;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(119, 117, 92);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.logo {
+  height: 200px;
+  width: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+.inputbox {
+  text-decoration: aliceblue;
+  margin: 10px 50px;
+  position: absolute;
+  bottom: -10%;
+  right: 35%;
+  height: 40px;
+  width: 500px;
+  border: solid white;
+  border-radius: 8px;
+  background-color: white(15, 14, 14);
+  outline: none;
+  /* transform: translateY(-50%); */
+}
+
+.searchbutton {
+  position: absolute;
+  right: 30%;
+  height: 40px;
+  width: 100px;
+  top: 795px;
+}
+
+#randomMeal {
+  /* position: absolute; */
+  text-align: center;
+  right: 40%;
+
+  font-family: "Dancing Script", cursive;
+  /* border: 3px solid black; */
+  border-radius: 20px;
+  margin-top: 30px;
+}
+li {
+  margin-top: 10px;
+  margin-left: 180px;
+}
+
+#randomMealContent {
+  text-align: center;
+  margin-top: 40px;
+  position: absolute;
+  top: 130%;
+  right: 42%;
+}
+
+#randomMealContent img {
+  max-width: 100%;
+  height: 300px;
+  box-shadow: 50px 100px 100px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin-top: 80px;
+  margin-right: 20px;
+}
+
+.modal-content {
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff8e6;
+  height: 600px;
+  width: 500px;
+  margin-left: 600px;
+}
+.modal-content img {
+  width: 300px;
+  height: 200px;
+  margin-left: 80px;
+}
+.modal-content h2 {
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #cc0000;
+}
+
+#searchedMealContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* margin-top: 500px; */
+}
+
+#searchedMealContainer img {
+  width: 150px;
+  height: 120px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.searched-meals {
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+  width: 100vw;
+  top: 180%;
+}
